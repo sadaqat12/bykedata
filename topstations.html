@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+		crossorigin="anonymous">
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<title>Top Stations</title>
+		<link href="style1.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="bykedatalogo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav nl-auto">
+                <li class="nav-item active"><a class="nav-link"
+                    href="index.html">Home</a></li>
+                <li class="nav-item active"><a class="nav-link"
+                    href="trends.html">Trends</a></li>
+                <li class="nav-item active"><a class="nav-link"
+                    href="topstations.html">Top Stations</a></li>
+                <li class="nav-item active"><a class="nav-link"
+                    href="stats.html">Statistics</a></li>
+
+            </ul>
+        </div>
+    </div>
+    </nav>
+    
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">Top Stations of Los Angeles!</h1>
+			</div>
+			<hr>
+				<div class="col-12">
+					<p class="lead">One of the objectives was to find out which
+						stations were the busiest starting points and which were the
+						busiest ending points.</p>
+					<hr></hr>
+
+				</div>
+			</hr>
+		</div>
+	</div>
+	<h2>Busiest Start Station: 3069</h2>
+
+
+	<img src="busieststarting.png"></img>
+	<hr />
+	<h2>Busiest Ending Station: 3005</h2>
+	<hr />
+	<img src="busiestending.png"></img>
+	<hr />
+	<p class="text-center" style="font-size: 24px">Using Tableau I was
+		able to find that the busiest station for starting off a trip was
+		Station 3069 (5,130 trips). While the busiest for ending was Station
+		3005 (6,261 trips). I excluded station 4108 from both of these charts.
+		This exclusion does not affect my intended purpose much which was to
+		find the busiest stations, and station 4108 was pretty slow. Then I
+		located both of the stations using the given coordinates, by plugging
+		the latitude/longitude pairs into Google Maps. This data also shows
+		that as the day goes by, more bikes end up in the southwest of the
+		city (by the Sheraton Grand) than by W 3rd Street. So this shows that
+		there is a need for the company to move some bikes back to the
+		northeast side as that is the busiest spot for picking up bikes.</p>
+	<hr />
+
+	<div class="container-fluid padding">
+		<div class="row text-center padding">
+			<div class="col-xs-12 col-sm-6 col-md-6">
+				<img src="station3069(1).png"></img>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6">
+				<img src="station3005.png"></img>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
