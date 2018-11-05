@@ -2,6 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- Things I need to make the site function, mostly from bootstrap -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,12 +16,14 @@
 			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 		<script
 			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+			<!-- A title for the page -->
 		<title>Statistics</title>
+		<!-- A reference to the style css file -->
 		<link href="style1.css" rel="stylesheet">
 </head>
 <body>
 
-	<!-- Navigation Bar -->
+    <!-- A Navigation Bar that has links to all the different pages -->
 
 	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
 	<div class="container-fluid">
@@ -68,13 +71,26 @@
 	<hr>
 		<div class="col-12 text-center">
 			<h2 class="display-8">Average Distance Traveled</h2>
-		</div>
-		<p class="text-center" style="font-size: 24px">I calculated the
-			average distance traveled by a rider to be 3.86 miles. To calculate
-			this I used a library in R called geosphere which contains a function
-			called 'distm' which computes the distance between two coordinates.
+		
+		<p  style="font-size: 24px">The
+			average distance traveled by a rider was calculated to be 3.86 miles. To calculate
+			this a library in R called geosphere which contains a function
+			called 'distm' was used, which computes the distance between two coordinates.
 			In order to calculate the average, I had to remove all data which
 			contained any null entries, as the calculating the distance was not
 			plausible in those cases.</p>
+		<hr></hr>
+		
+		<img class="image-center" src="routevspass.png"></img>
+		<p>This segmented bar graph shows the breakdown of the Trip Route - 
+		Passholder Type combinations. It can be seen that for all the categories of the 
+		passholder one way going clients outnumber the returning clients. I believe
+		a cause of this could be that people in the monthly pass holding category 
+		for example could be using the bikes as a means to get to work, and back 
+		which are one way trips. While there are more clients who return bikes to
+		their starting points in the walk-up category, which could be because 
+		walk-up clients have trips that are more spontaneous such as going to the 
+		corner store.</p>
+		</div>
 </body>
 </html>
